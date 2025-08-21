@@ -50,11 +50,6 @@ body {
     color: #333;
 }
 
-main {
-    margin-left: 200px;
-    width: calc(100% - 200px);
-}
-
 li {
     list-style: none;
 }

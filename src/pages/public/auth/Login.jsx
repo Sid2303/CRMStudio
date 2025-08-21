@@ -6,10 +6,13 @@ import { Link } from 'react-router-dom';
 import loginImg from '../../../assets/photos/login-right-better.png';
 import SubmitButton from '../../../components/PublicComponents/reusables/SubmitButton.jsx';
 import OtherLogins from '../../../components/PublicComponents/reusables/OtherLogins.jsx';
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         if (e.target.name === 'email') {
@@ -22,6 +25,9 @@ export default function Login() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Login data:', email, password);
+
+        navigate('/dashboard');
+
     };
 
     return (

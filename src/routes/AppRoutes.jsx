@@ -7,6 +7,8 @@ import ForgotPassword from "../pages/public/auth/ForgotPassword.jsx";
 import VerifyOtp from "../pages/public/auth/VerifyOtp.jsx";
 import SetNewPassword from "../pages/public/auth/SetNewPassword.jsx";
 
+import ProtectedRoutes from "./ProtectedRoutes.jsx";
+
 
 export default function AppRoutes() {
     return (
@@ -19,6 +21,8 @@ export default function AppRoutes() {
                 <Route path="/verifyotp" element={<VerifyOtp />} />
                 <Route path="/setnewpassword" element={<SetNewPassword />} />
             </Route>
+
+            <Route path="/*" element={<ProtectedRoutes />} />
         </Routes>
     );
 }

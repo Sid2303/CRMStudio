@@ -1,0 +1,20 @@
+main{
+    width: calc(100% - 200px);
+    min-height: 100vh;
+    margin-left: 200px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    main{
+        width: calc(100% - 100px);
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    main{
+        width: 100%;
+        margin: 0;
+    }
+}
