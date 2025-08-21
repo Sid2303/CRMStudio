@@ -1,0 +1,99 @@
+
+.get-crm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+.get-crm-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.get-crm-left h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.get-crm-left p{
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.get-crm-right{
+    width: 40%;
+}
+
+.get-crm-right video{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+}
+
+.get-crm-buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.get-crm-buttons button{
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background .3s ease;
+}
+
+.get-demo{
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.get-free{
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.get-demo:hover{
+    background-color: #f0f0f0;
+}
+
+.get-free:hover{
+    background-color: #0056b3;
+}
+
+
+@media only screen and (max-width: 950px){
+    .get-crm-left h1{
+        font-size: 1.5rem;
+    }
+
+    .get-crm-left p{
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+    .get-crm{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .get-crm-right{
+        width: 80%;
+    }
+
+    .get-crm-left{
+        width: 80%;
+    }
+}

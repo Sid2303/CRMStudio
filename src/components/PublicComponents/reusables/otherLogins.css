@@ -1,0 +1,23 @@
+.other-login-methods{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.company-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 40px;
+    border: 1px solid #007bff;
+    border-radius: 7px;
+    transition: .2s;
+}
+
+.company-div:hover {
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
+}
