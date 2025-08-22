@@ -51,7 +51,7 @@ export default function Dashboard() {
                         handleDateChange={handleDateChange}
                         selectedDate={selectedDate}
                     />
-                    <Schedule />
+                    <Schedule selectedDate={selectedDate} month={month} year={year} />
                 </div>
             </div>
         </div>

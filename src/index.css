@@ -3,9 +3,9 @@
 @import "tailwindcss";
 
 :root {
-    /* App theme color */
     --theme-color: #514EF3;
     --border-color: #d1d1d1;
+    --theme-color-hover: #3e3bbf;
 }
 
 *{

@@ -8,4 +8,9 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    transition: .3s;
+}
+
+.add-button:hover{
+    background-color: var(--theme-color-hover);
 }
