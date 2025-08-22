@@ -1,0 +1,7 @@
+/* Calendar container to keep header and body aligned */
+.calander-container{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 8px;
+}
