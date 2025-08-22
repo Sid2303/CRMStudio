@@ -1,9 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot,faUsers,faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import './AppointMentComponent.css'
+import PriorityTag from '../PriorityTag/PriorityTag';
+import './AppointmentComponent.css'
 
-export default function AppointMentComponent() {
+export default function AppointmentComponent() {
     return (
         <div className='appointment-component'>
             <div className="appointment-component-left">
@@ -30,6 +31,7 @@ export default function AppointMentComponent() {
                             <p>10</p>
                         </div>
                     </div>
+                    <PriorityTag />
                 </div>
             </div>
         </div>

@@ -14,6 +14,10 @@
     padding: 20px;
 }
 
+.appointment-component-right{
+    padding-right: 20px;
+}
+
 .appointment-component-right-header{
     display: flex;
     justify-content: space-between;
@@ -44,6 +48,6 @@
     height: 100%;
 }
 
-.appointment-component-details-info i{
+.appointment-component-details-info{
     color: var(--theme-color);
 }

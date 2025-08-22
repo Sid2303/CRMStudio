@@ -1,6 +1,6 @@
 import React from 'react'
 import './ScheduleHeader.css'
-import AddButton from '../../resables/AddButton'
+import AddButton from '../../reusables/AddButton/AddButton'
 
 export default function ScheduleHeader() {
     return (
