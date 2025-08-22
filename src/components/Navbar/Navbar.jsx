@@ -12,13 +12,10 @@ export default function Navbar(props) {
                     <FontAwesomeIcon icon={faBars} id='menu-button'onClick={props.toggleSidebar}/>
                     <img src={companyLogo} alt="company-logo" id="conpany-logo" />
                 </div>
-                <div className="page-name">
-                    <h1>Dashboard</h1>
-                </div>
             </div>
             <div className="user-info">
                 <div className="dropdown-trigger">
-                    <img src="user.svg" alt="" />
+                    <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="" />
                     <div className="dropdown">
                         <div className="dropdown-header">
                             <h3>Siddhant Rawat</h3>

@@ -1,0 +1,46 @@
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F9F9FA;
+    height: 50px;
+    border-top: 2px solid rgb(215, 215, 215);
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: #646464;
+}
+
+@media only screen and (max-width: 850px) {
+    footer{
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 650px){
+    footer{
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: fit-content;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

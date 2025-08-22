@@ -27,7 +27,7 @@ export default function Sidebar(props) {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/tasks" className={({ isActive }) => isActive ? 'selected-page' : ''}>
+                        <NavLink to="/todo" className={({ isActive }) => isActive ? 'selected-page' : ''}>
                             <FontAwesomeIcon icon={faListCheck} />
                             <p>To Do</p>
                         </NavLink>
@@ -52,6 +52,15 @@ export default function Sidebar(props) {
                     </li>
                 </ul>
             </nav>
+            <div className="sidebar-footer">
+                <div className="profile-img">
+                    <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="" />
+                </div>
+                <div className="profile-details">
+                    <p className="user-name">Siddhant Rawat</p>
+                    <p className="usermail">siddhantrawat.web@gmail.com</p>
+                </div>
+            </div>
         </aside>
     );
 }

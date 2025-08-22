@@ -9,7 +9,6 @@ import SetNewPassword from "../pages/public/auth/SetNewPassword.jsx";
 
 import ProtectedRoutes from "./ProtectedRoutes.jsx";
 
-
 export default function AppRoutes() {
     return (
         <Routes>
