@@ -241,6 +241,12 @@ form a{
     }
 }
 
+@media only screen and (max-width: 650px) {
+    .talk-to-crm-expert h1{
+        font-size: 2rem;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .name{
         flex-direction: column;
@@ -275,5 +281,17 @@ form a{
 
     .about-help textarea{
         width: 100%;
+    }
+
+    .talk-to-crm-expert h1{
+        font-size: 1.5rem;
+    }
+
+    .about-help label{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        text-align: center;
+        top: -10px;
     }
 }

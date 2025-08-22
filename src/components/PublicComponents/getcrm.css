@@ -97,3 +97,14 @@
         width: 80%;
     }
 }
+
+@media only screen and (max-width: 500px){
+    .get-crm-buttons{
+        flex-direction: column;
+    }
+
+    .get-crm-buttons button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

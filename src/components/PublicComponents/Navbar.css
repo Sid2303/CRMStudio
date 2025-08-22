@@ -273,9 +273,11 @@ a{
         display: none;
     }
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 425px) {
     .create-acc{
-        display: none;
+        /* display: none; */
+        padding: 5px;
+        gap: 10px;
     }
     .dropdown-options-bottom{
         display: flex;
@@ -284,6 +286,11 @@ a{
         gap: 20px;
     }
     .header-left{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header ul{
         width: 100%;
         justify-content: space-between;
     }

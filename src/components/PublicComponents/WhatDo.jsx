@@ -37,20 +37,20 @@ export default function WhatDo() {
             <div className="what-we-do-container">
                 <h1>CRM studio brings all your teams on the same page at every step in the customer journey</h1>
                 <div className="we-do-section straight">
-                    <WeDoImg img={managementImg} />
+                    <WeDoImg img={managementImg} title={management.title}/>
                     <WeDoInfo {...management}/>
                 </div>
                 <div className="we-do-section opposite">
                     <WeDoInfo {...analytics}/>
-                    <WeDoImg img={analyticsImg} />
+                    <WeDoImg img={analyticsImg} title={analytics.title} />
                 </div>
                 <div className="we-do-section straight">
-                    <WeDoImg img={supportImg} />
+                    <WeDoImg img={supportImg} title={support.title}/>
                     <WeDoInfo {...support}/>
                 </div>
                 <div className="we-do-section opposite">
                     <WeDoInfo {...sales}/>
-                    <WeDoImg img={salesImg} />
+                    <WeDoImg img={salesImg} title={sales.title}/>
                 </div>
             </div>
         </div>

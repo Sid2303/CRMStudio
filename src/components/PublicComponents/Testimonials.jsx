@@ -60,7 +60,7 @@ export default function Testimonials() {
                 {reviews.map((review, index) => (
                     <div className="review" id={index} key={index} style={{minWidth: '100%', boxSizing: 'border-box'}}>
                         <div className="review-text"><p>{review.text}</p></div>
-                        <div className="review-person"><p>{review.person}</p><p>{review.position}</p></div>
+                        <div className="review-person"><p>{review.person}</p>•<p>{review.position}</p></div>
                     </div>
                 ))}
             </div>
