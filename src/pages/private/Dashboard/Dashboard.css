@@ -1,0 +1,19 @@
+.calendar-component-holder{
+    display: flex;
+    gap: 40px;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 60px;
+}
+
+@media only screen and (max-width: 750px) {
+    .calendar-component-holder{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}

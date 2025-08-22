@@ -1,0 +1,15 @@
+.schedule-component{
+    width: 100%;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.schedule-body{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}

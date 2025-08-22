@@ -1,6 +1,6 @@
 header {
     min-height: 12vh;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
@@ -59,7 +59,7 @@ header {
 }
 
 @media screen and (max-width: 750px) {
-    .header{
+    header{
         display: flex;
     }
 

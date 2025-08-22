@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import './Dashboard.css'
 import Calendar from '../../../components/PrivateComponents/UserDashboard/Calendar/Calendar.jsx'
+import Schedule from '../../../components/PrivateComponents/UserDashboard/Schedule/Schedule.jsx';
 
 export default function Dashboard() {
     const date = new Date();
@@ -35,12 +36,12 @@ export default function Dashboard() {
 
 
     return (
-        <>
+        <div className="dashboard">
             <div className="dashboard-heading">
                 <h2>Welcome back! Here's your workspace</h2>
             </div>
             <div className="dashboard-contents">
-                <div className="calendar-component">
+                <div className="calendar-component-holder">
                     <Calendar 
                         month={month}
                         year={year}
@@ -50,8 +51,9 @@ export default function Dashboard() {
                         handleDateChange={handleDateChange}
                         selectedDate={selectedDate}
                     />
+                    <Schedule />
                 </div>
             </div>
-        </>
+        </div>
     )
 }

@@ -1,0 +1,11 @@
+.add-button{
+    color: white;
+    background-color: var(--theme-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

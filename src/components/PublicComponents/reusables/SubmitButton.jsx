@@ -3,6 +3,6 @@ import './submitButton.css';
 
 export default function SubmitButton(props) {
     return (
-        <button type="submit" id="submit-btn">{props.name}</button>
+        <button type="submit" className="submit-button">{props.name}</button>
     )
 }

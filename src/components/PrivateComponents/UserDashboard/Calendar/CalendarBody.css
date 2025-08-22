@@ -14,18 +14,18 @@
 }
 
 .date:hover{
-    border: 2px solid #007bff;
+    border: 2px solid var(--theme-color);
     cursor: pointer;
 }
 
 .today{
     border-radius: 7px;
-    background-color: #007bff;
+    background-color: var(--theme-color);
     color: white;
 }
 
 .selected-date {
-    border: 2px solid #007bff;
-    color: #007bff;
+    border: 2px solid var(--theme-color);
+    /* color: #007bff; */
     border-radius: 7px;
 }

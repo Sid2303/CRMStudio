@@ -1,0 +1,49 @@
+.appointment-component{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border-radius: 12px;
+    height: 140px;
+    border: 2px solid var(--border-color);
+    position: relative;
+}
+
+.appointment-component-left{
+    color: var(--theme-color);
+    padding: 20px;
+}
+
+.appointment-component-right-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appointment-component-right-body p{
+    height: 30px;
+    overflow: hidden;
+}
+
+.appointment-component-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appointment-component-details-info{
+    display: flex;
+    justify-content: start;
+    width: 50%;
+    gap: 5px;
+    align-items: center;
+}
+
+.appointment-component-details-info p,i{
+    height: 100%;
+}
+
+.appointment-component-details-info i{
+    color: var(--theme-color);
+}

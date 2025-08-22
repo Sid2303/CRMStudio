@@ -4,4 +4,6 @@
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 8px;
+	border: 2px solid var(--border-color);
+    border-radius: 12px;
 }
