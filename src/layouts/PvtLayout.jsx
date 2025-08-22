@@ -18,8 +18,8 @@ export default function PvtLayout({ children }) {
             <main onClick={() => isSidebarOpen && setIsSidebarOpen(false) }>
                 <Navbar toggleSidebar={toggleSidebar}/>
                 {children}
-                <Footer />
             </main>
+            <Footer />
         </div>
     );
 }

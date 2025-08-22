@@ -15,7 +15,7 @@ export default function Sidebar(props) {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/company" className={({ isActive }) => isActive ? 'selected-page' : ''}>
+                        <NavLink to="/companydashboard" className={({ isActive }) => isActive ? 'selected-page' : ''}>
                             <FontAwesomeIcon icon={faBriefcase} />
                             <p>Bussiness</p>
                         </NavLink>
@@ -53,8 +53,24 @@ export default function Sidebar(props) {
                 </ul>
             </nav>
             <div className="sidebar-footer">
-                <div className="profile-img">
-                    <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="" />
+                <div className="sidebar-dropdown-trigger">
+                    <div className="profile-img">
+                        <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="" />
+                    </div>
+                    <div className="sidebar-dropdown">
+                        <div className="sidebar-dropdown-header">
+                            <h3>Siddhant Rawat</h3>
+                            <p>siddhantrawat.web@gmail.com</p>
+                            <p>2025-2025</p>
+                        </div>
+                        <div className="sidebar-nav">
+                            <NavLink to="/profile">Profile</NavLink>
+                            <NavLink to="/help">Help</NavLink>
+                        </div>
+                        <div className="sidebar-logout-row">
+                            <button className="sidebar-logout" type="button">Logout</button>
+                        </div>
+                    </div>
                 </div>
                 <div className="profile-details">
                     <p className="user-name">Siddhant Rawat</p>

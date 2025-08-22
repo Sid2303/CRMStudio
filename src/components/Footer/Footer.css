@@ -1,5 +1,6 @@
 footer{
-    width: 100%;
+    width: calc(100% - 280px);
+    margin-left: 280px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -19,12 +20,25 @@ footer ul a{
     color: #646464;
 }
 
+@media only screen and (max-width: 1000px) {
+    footer{
+        width: calc(100% - 100px);
+        margin-left: 100px;
+    }
+}
+
 @media only screen and (max-width: 850px) {
     footer{
         font-size: 14px;
     }
 }
 
+@media only screen and (max-width: 750px) {
+    footer{
+        width: 100%;
+        margin: 0;
+    }
+}
 
 @media only screen and (max-width: 650px){
     footer{

@@ -13,34 +13,6 @@ export default function Navbar(props) {
                     <img src={companyLogo} alt="company-logo" id="conpany-logo" />
                 </div>
             </div>
-            <div className="user-info">
-                <div className="dropdown-trigger">
-                    <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="" />
-                    <div className="dropdown">
-                        <div className="dropdown-header">
-                            <h3>Siddhant Rawat</h3>
-                            <p>siddhantrawat.web@gmail.com</p>
-                            <p>2025-2025</p>
-                        </div>
-                        <div className="nav-div">
-                            <a href="settings.html">
-                                <i className="fa-regular fa-user"></i>
-                                Profile
-                            </a>
-                            <a href="">
-                                <i className="fa-regular fa-circle-question"></i>
-                                Help
-                            </a>
-                        </div>
-                        <div className="logout">
-                            <button>
-                                <i className="fa-solid fa-right-to-bracket"></i>
-                                Logout
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </header>
     )
 }

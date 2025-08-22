@@ -100,6 +100,16 @@ aside li:hover a{
     height: 50px;
     margin-bottom: 5px;
     border-radius: 7px;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    transition: .3s;
+    border: 2px solid transparent;
+}
+
+.sidebar-footer:hover{
+    background-color: #ffffff;
+    border: 2px solid #e6e6e6;
 }
 
 .profile-img{
@@ -120,6 +130,96 @@ aside li:hover a{
 }
 
 .usermail{
+    font-size: 12px;
+    color: #666;
+}
+
+.sidebar-dropdown-trigger{
+    height: 40px;
+    width: 40px;
+    
+    border-radius: 50%;
+}
+
+.sidebar-dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    left: 95%;
+    bottom: 0px;
+    /* transform: translateY(-50%) translateX(12px); */
+    border: 2px solid rgb(220, 220, 220);
+    background: #fff;
+    width: 240px;
+    border-radius: 10px;
+    z-index: 1000;
+    transition: opacity .2s ease-out, transform .2s ease-out;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 5px 5px 14px 4px rgba(0,0,0,0.11);
+}
+
+.sidebar-dropdown-header{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-bottom: 2px solid #d1d1d1;
+    padding: 10px;
+}
+
+.sidebar-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+}
+
+.sidebar-nav a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #707070;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+.sidebar-nav a:hover{
+    background-color: #f0f0f0;
+}
+
+.sidebar-logout-row{
+    padding: 10px;
+    border-top: 2px solid #d1d1d1;
+}
+
+.sidebar-logout{
+    width: 100%;
+    border: none;
+    background-color: white;
+    color: rgb(255, 97, 97);
+    font-weight: 600;
+    border-radius: 7px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.sidebar-logout:hover{
+    background-color: #f0f0f0;
+}
+
+.sidebar-footer:hover .sidebar-dropdown,
+.sidebar-dropdown:hover{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sidebar-dropdown-header {
+    font-weight: 600;
+    color: #333;
+}
+
+.sidebar-dropdown-header p{
+    margin: 0;
     font-size: 12px;
     color: #666;
 }
@@ -169,6 +269,24 @@ aside li:hover a{
         overflow-y: scroll;
         border: 0;
     }
+
+    .sidebar-dropdown{
+        left: auto;
+        right: -50px;
+        top: auto;
+        bottom: 60px;
+        transform: translateX(22px);
+        display: none;
+    }
+
+    .sidebar-footer{
+        width: 90%;
+    }
+
+    .sidebar-footer:hover .sidebar-dropdown,
+    .sidebar-dropdown:hover{
+        transform: translateX(0);
+    }
     
     .sidebar.active{
         transform: translateX(0);
@@ -216,5 +334,15 @@ aside li:hover a{
     .profile-details{
         display: flex;
         flex-direction: column;
+    }
+
+    .selected-page{
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .sidebar-dropdown{
+        left: 20px;
     }
 }

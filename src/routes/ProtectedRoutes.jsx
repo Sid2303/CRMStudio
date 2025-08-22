@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import CompanyDashboard from '../pages/private/CompanyDashboard.jsx';
+import Dashboard from '../pages/private/Dashboard/Dashboard.jsx';
 import PvtLayout from '../layouts/PvtLayout.jsx';
 import ToDo from '../pages/private/ToDo/ToDo.jsx';
 import Notes from '../pages/private/Notes/Notes.jsx';
@@ -11,6 +12,15 @@ export default function ProtectedRoutes() {
 		<Routes>
 			<Route
 				path="/dashboard"
+				element={
+						<PvtLayout>
+							<Dashboard />
+						</PvtLayout>
+				}
+			/>
+
+			<Route
+				path="/companydashboard"
 				element={
 						<PvtLayout>
 							<CompanyDashboard />
