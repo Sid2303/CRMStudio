@@ -14,7 +14,7 @@ export default function ScheduleHeader() {
                 </div>
             </div>
             <div className="schedule-header-bottom">
-                <p>7 Appointments Today</p>
+                <p>17</p>
             </div>
         </header>
     )

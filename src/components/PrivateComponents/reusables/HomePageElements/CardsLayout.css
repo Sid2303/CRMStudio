@@ -1,0 +1,27 @@
+.home-cards-layout{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
+.home-card-layout-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.home-card-layout-header-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.home-card-layout-header-icon{
+    color: var(--theme-color);
+}

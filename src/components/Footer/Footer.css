@@ -1,6 +1,6 @@
 footer{
-    width: calc(100% - 280px);
-    margin-left: 280px;
+    width: calc(100% - 240px);
+    margin-left: 240px;
     display: flex;
     justify-content: space-around;
     align-items: center;

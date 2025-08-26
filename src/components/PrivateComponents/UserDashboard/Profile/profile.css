@@ -1,10 +1,99 @@
 .profile-card{
     display: flex;
     align-items: center;
+    justify-content: start;
     gap: 20px;
     height: 100%;
     border: 2px solid var(--border-color);
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile-card-pic{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.profile-card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.profile-card-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-card-info-username{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.profile-card-info-role{
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.profile-card-info-employment-type{
+    margin: 0;
+    font-size: 14px;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECEEF2;
+    font-weight: 400;
+}
+
+.profile-card-contact-info-section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.profile-card-contact-info{
+    text-overflow: ellipsis;
+}
+
+.icon{
+    color: var(--theme-color);
+}
+
+@media only screen and (max-width: 600px){
+    .profile-card{
+        flex-direction: column;
+        text-align: center;
+        height: fit-content;
+        padding: 20px 0;
+    }
+
+    .profile-card-pic{
+        height: 120px;
+        width: 120px;
+        margin: 0;
+    }
+
+    .profile-card-info{
+        align-items: center;
+        gap: 5px;
+    }
+
+    .profile-card-contact-info{
+        flex-direction: column;
+        gap: 5px;
+    }
+    
 }

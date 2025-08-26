@@ -1,0 +1,17 @@
+.view-more-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 130px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    cursor: pointer;
+    gap: 10px;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.view-more-button:hover{
+    background-color: #dcdcdc;
+}

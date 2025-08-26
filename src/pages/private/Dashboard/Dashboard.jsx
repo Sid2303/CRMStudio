@@ -4,6 +4,8 @@ import './Dashboard.css'
 import Calendar from '../../../components/PrivateComponents/UserDashboard/Calendar/Calendar.jsx'
 import Schedule from '../../../components/PrivateComponents/UserDashboard/Schedule/Schedule.jsx';
 import Profile from '../../../components/PrivateComponents/UserDashboard/Profile/Profile.jsx';
+import Notes from '../../../components/PrivateComponents/UserDashboard/Notes/Notes.jsx';
+import ToDo from '../../../components/PrivateComponents/UserDashboard/ToDos/ToDos.jsx';
 
 export default function Dashboard() {
     const date = new Date();
@@ -61,6 +63,14 @@ export default function Dashboard() {
                     </div>
                     <div className="calendar-component-right">
                         <Schedule selectedDate={selectedDate} month={month} year={year} />
+                    </div>
+                </div>
+                <div className="notes-todos-holder">
+                    <div className="todos-component-holder">
+                        <ToDo />
+                    </div>
+                    <div className="notes-component-holder">
+                        <Notes />
                     </div>
                 </div>
             </div>

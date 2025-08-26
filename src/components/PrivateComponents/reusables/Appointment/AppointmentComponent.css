@@ -85,3 +85,17 @@
 .appointment-component-details-info{
     color: var(--theme-color);
 }
+
+@media only screen and (max-width: 600px){
+    .appointment-component{
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .appointment-component-left{
+        padding: 10px;
+    }
+}

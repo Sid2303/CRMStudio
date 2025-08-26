@@ -50,7 +50,7 @@
 }
 
 #prev-month:hover, #next-month:hover {
-    background-color: #007bff;
+    background-color: var(--theme-color);
     color: white;
 }
 

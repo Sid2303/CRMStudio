@@ -25,16 +25,14 @@
 
 
 .schedule-header p{
-    width: fit-content;
-    height: 40px;
-    width: fit-content;
-    padding: 0 10px;
-    border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #DBEAFE;
     color: var(--theme-color);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
 }
 
 .schedule-header-bottom{

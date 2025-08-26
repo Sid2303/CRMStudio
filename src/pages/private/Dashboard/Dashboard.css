@@ -10,6 +10,12 @@
     gap: 40px;
 }
 
+.dashboard-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .profile-section{
     height: 30%;
 }
@@ -30,12 +36,37 @@
     width: 50%;
 }
 
-@media only screen and (max-width: 850px) {
+.notes-todos-holder{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+.todos-component-holder{
+    width: 50%;
+}
+
+.notes-component-holder{
+    width: 50%;
+}
+
+@media only screen and (max-width: 1350px) {
     .calendar-component-holder{
         flex-direction: column;
     }
 
+    .profile-section{
+        height: 150px;
+    }
+
     .calendar-component-left, .calendar-component-right{
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .profile-section{
+        height: auto;
     }
 }

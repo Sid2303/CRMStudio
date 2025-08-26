@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faTableCells, faListCheck } from '@fortawesome/free-solid-svg-icons';
 import { faNoteSticky, faFolder, faComment } from '@fortawesome/free-regular-svg-icons';
 import { NavLink } from 'react-router-dom';
+import profilePic from '../../assets/profilepic.jpg';
 
 export default function Sidebar(props) {
     return (
@@ -55,7 +56,7 @@ export default function Sidebar(props) {
             <div className="sidebar-footer">
                 <div className="sidebar-dropdown-trigger">
                     <div className="profile-img">
-                        <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="" />
+                        <img src={profilePic} alt="" />
                     </div>
                     <div className="sidebar-dropdown">
                         <div className="sidebar-dropdown-header">
