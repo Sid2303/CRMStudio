@@ -1,0 +1,12 @@
+.notes-home-page{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    /* Ensure child scroll areas clip to rounded corners */
+    overflow: hidden;
+}

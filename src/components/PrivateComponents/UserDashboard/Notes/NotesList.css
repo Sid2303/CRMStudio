@@ -1,0 +1,29 @@
+.notes-list-home-page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 340px;
+    overflow: auto;
+}
+
+.notes-list-home-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.note-home-page{
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    overflow: hidden;
+}

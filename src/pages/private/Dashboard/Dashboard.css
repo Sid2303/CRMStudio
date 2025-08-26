@@ -38,9 +38,9 @@
 
 .notes-todos-holder{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     width: 100%;
-    height: 300px;
+    height: 400px;
 }
 
 .todos-component-holder{
