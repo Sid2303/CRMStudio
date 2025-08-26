@@ -1,0 +1,17 @@
+.flip-words{
+    display: inline-block;
+    font-weight: 600;
+    color: var(--theme-color, #2563eb);
+    will-change: transform, opacity;
+    transition: transform .25s ease, opacity .25s ease;
+}
+
+.flip-words.flipping{
+    transform: rotateX(90deg);
+    opacity: 0;
+}
+
+.flip-words:not(.flipping){
+    transform: rotateX(0deg);
+    opacity: 1;
+}

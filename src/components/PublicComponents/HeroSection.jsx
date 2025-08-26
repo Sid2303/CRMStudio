@@ -1,5 +1,6 @@
 import React from 'react'
 import './herosection.css'
+import FlipWords from './FlipWords'
 
 export default function HeroSection() {
     return (
@@ -9,7 +10,14 @@ export default function HeroSection() {
                 <span>Get everyone working in a single platform</span> designed to manage any type of work.
             </h3>
             <button>Get Started. For Free</button>
-            <p>Free Demo. No Credit Card.</p>
+            <p>
+                Free Demo.{' '}
+                <FlipWords words={[
+                    'No Credit Card',
+                    'Cancel anytime',
+                    'No setup required'
+                ]} interval={2000} />
+            </p>
         </div>
     )
 }
