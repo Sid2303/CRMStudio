@@ -1,10 +1,10 @@
 .schedule-header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-bottom: 1px solid #ddd;
-    height: 115px;
+    border-bottom: 1px solid var(--border-color);
+    height: 120px;
     padding: 10px 20px;
 }
 
@@ -19,9 +19,22 @@
 }
 
 .add-appointment-button-container{
-    width: 180px;
     height: 50px;
-    font-size: 16px;
+    font-size: 12px;
+}
+
+
+.schedule-header p{
+    width: fit-content;
+    height: 40px;
+    width: fit-content;
+    padding: 0 10px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBEAFE;
+    color: var(--theme-color);
 }
 
 .schedule-header-bottom{
@@ -29,19 +42,8 @@
     width: 100%;
     justify-content: start;
     align-self: center;
-}
-
-.schedule-header p{
-    width: fit-content;
-    height: 40px;
-    width: fit-content;
-    padding: 0 10px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #DBEAFE;
-    color: var(--theme-color);
+    font-size: 14px;
+    height: 30px;
 }
 
 @media only screen and (max-width: 1200px){

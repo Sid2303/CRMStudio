@@ -187,4 +187,8 @@
         justify-content: start;
         align-items: start;
     }
+
+    .hero-section{
+        height: fit-content;
+    }
 }

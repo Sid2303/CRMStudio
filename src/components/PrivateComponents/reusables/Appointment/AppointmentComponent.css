@@ -9,6 +9,7 @@
     border: 2px solid var(--border-color);
     position: relative;
     transition: .2s;
+    cursor: pointer;
 }
 
 .appointment-component:hover{
@@ -34,6 +35,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 20px;
+    overflow: hidden;
+}
+
+.appointment-component-title{
+    width: 80%;
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .appointment-component-right-body{
@@ -59,7 +72,7 @@
 .appointment-component-details-info{
     display: flex;
     justify-content: start;
-    width: 50%;
+    width: fit-content;
     gap: 5px;
     font-size: 14px;
     align-items: center;

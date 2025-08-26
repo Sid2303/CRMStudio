@@ -22,12 +22,14 @@ export default function Schedule(props) {
         <div className='schedule-component'>
             <ScheduleHeader />
             <div className="schedule-body">
-                {todayAppointments.length > 0 ? todayAppointments.map((appointment, index) => (
-                    <AppointmentComponent 
-                        key={index}
-                        appointment={appointment}
-                    />
-                )): 'No appointments for today'}
+                <div className="appointments-container">
+                    {todayAppointments.length > 0 ? todayAppointments.map((appointment, index) => (
+                        <AppointmentComponent 
+                            key={index}
+                            appointment={appointment}
+                        />
+                    )): 'No appointments for today'}
+                </div>
             </div>
         </div>
     )

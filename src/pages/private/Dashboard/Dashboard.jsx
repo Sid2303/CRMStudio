@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './Dashboard.css'
 import Calendar from '../../../components/PrivateComponents/UserDashboard/Calendar/Calendar.jsx'
 import Schedule from '../../../components/PrivateComponents/UserDashboard/Schedule/Schedule.jsx';
+import Profile from '../../../components/PrivateComponents/UserDashboard/Profile/Profile.jsx';
 
 export default function Dashboard() {
     const date = new Date();
@@ -42,16 +43,25 @@ export default function Dashboard() {
             </div>
             <div className="dashboard-contents">
                 <div className="calendar-component-holder">
-                    <Calendar 
-                        month={month}
-                        year={year}
-                        nextMonth={handleNextMonth}
-                        prevMonth={handlePrevMonth}
-                        today={today}
-                        handleDateChange={handleDateChange}
-                        selectedDate={selectedDate}
-                    />
-                    <Schedule selectedDate={selectedDate} month={month} year={year} />
+                    <div className="calendar-component-left">
+                        <div className="profile-section">
+                            <Profile />
+                        </div>
+                        <div className="calendar-section">
+                            <Calendar 
+                                month={month}
+                                year={year}
+                                nextMonth={handleNextMonth}
+                                prevMonth={handlePrevMonth}
+                                today={today}
+                                handleDateChange={handleDateChange}
+                                selectedDate={selectedDate}
+                            />
+                        </div>
+                    </div>
+                    <div className="calendar-component-right">
+                        <Schedule selectedDate={selectedDate} month={month} year={year} />
+                    </div>
                 </div>
             </div>
         </div>

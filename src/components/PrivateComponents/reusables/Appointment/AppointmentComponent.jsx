@@ -8,11 +8,11 @@ export default function AppointmentComponent(props) {
     return (
         <div className='appointment-component'>
             <div className="appointment-component-left">
-                <p>12:36pm</p>
+                <p>{props.appointment.time}</p>
             </div>
             <div className="appointment-component-right">
                 <div className="appointment-component-right-header">
-                    <h4 className="appointment-component-title">{props.appointment.title}</h4>
+                    <p className="appointment-component-title">{props.appointment.title}</p>
                     <FontAwesomeIcon icon={faArrowRight} />
                 </div>
                 <div className="appointment-component-right-body">

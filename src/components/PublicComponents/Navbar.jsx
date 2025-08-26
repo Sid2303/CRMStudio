@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useRef,useEffect } from 'react'
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars,faXmark } from '@fortawesome/free-solid-svg-icons'
@@ -7,13 +7,29 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     const [dropdownState,setDropdownState] = useState(false);
+    const dropdownRef = useRef(null);
 
     const toggleDropdown = () => {
         setDropdownState(!dropdownState);
         console.log(dropdownState)
     }
 
-    return (<header className="header">
+    useEffect(() => {
+        const headerEl = dropdownRef.current;
+        const onScroll = () => {
+            if (!headerEl) return;
+            if (window.scrollY > 300) {
+                headerEl.classList.add('active');
+            } else {
+                headerEl.classList.remove('active');
+            }
+        };
+        window.addEventListener('scroll', onScroll);
+        onScroll();
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
+    return (<header id="header-home" className="home-header" ref={dropdownRef}>
         <div className={`overlay ${dropdownState ? 'active' : ''}`} onClick={toggleDropdown}></div>
             <ul>
                 <div className="header-left">

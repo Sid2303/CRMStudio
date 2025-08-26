@@ -1,4 +1,4 @@
-.header{
+.home-header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,28 @@
     height: 100px;
 }
 
-.header ul{
+.home-header.active{
+    position: sticky;
+    top: 0;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    z-index: 100;
+    animation: dropFromTop 0.3s ease;
+}
+
+@keyframes dropFromTop {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+.home-header ul{
     display: flex;
     width: 90%;
     height: 50px;
@@ -267,15 +288,26 @@ a{
     .dropdown-options-bottom{
         display: none;
     }
+
+    .home-header ul{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .home-header{
+        padding: 0;
+    }
 }
+
 @media only screen and (max-width: 700px){
     .contact-sales{
         display: none;
     }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 455px) {
     .create-acc{
-        /* display: none; */
+        display: none;
         padding: 5px;
         gap: 10px;
     }
@@ -289,9 +321,6 @@ a{
         width: 100%;
         justify-content: space-between;
     }
+    
 
-    .header ul{
-        width: 100%;
-        justify-content: space-between;
-    }
 }

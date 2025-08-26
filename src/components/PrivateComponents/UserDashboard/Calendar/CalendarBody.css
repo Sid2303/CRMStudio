@@ -3,29 +3,29 @@
     width: 100%;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     gap: 10px;
+    padding: 20px;
 }
 
 .date{
     border: 2px solid transparent;
     transition: .2s;
+    border-radius: 7px;
+    transition: .2s;
 }
 
 .date:hover{
-    border: 2px solid var(--theme-color);
+    background-color: rgb(239, 239, 239);
     cursor: pointer;
+    color: #007bff;
+}
+
+.selected-date {
+    border: 2px solid var(--theme-color);
 }
 
 .today{
     border-radius: 7px;
     background-color: var(--theme-color);
     color: white;
-}
-
-.selected-date {
-    border: 2px solid var(--theme-color);
-    /* color: #007bff; */
-    border-radius: 7px;
 }

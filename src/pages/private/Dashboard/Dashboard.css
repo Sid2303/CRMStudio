@@ -7,13 +7,35 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 60px;
+    gap: 40px;
 }
 
-@media only screen and (max-width: 750px) {
+.profile-section{
+    height: 30%;
+}
+
+.calendar-section{
+    height: 70%;
+}
+
+.calendar-component-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.calendar-component-right{
+    display: flex;
+    width: 50%;
+}
+
+@media only screen and (max-width: 850px) {
     .calendar-component-holder{
         flex-direction: column;
-        gap: 20px;
     }
-    
+
+    .calendar-component-left, .calendar-component-right{
+        width: 100%;
+    }
 }
