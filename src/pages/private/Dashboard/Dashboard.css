@@ -63,6 +63,19 @@
     .calendar-component-left, .calendar-component-right{
         width: 100%;
     }
+
+    .notes-todos-holder{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .todos-component-holder{
+        width: 100%;
+    }
+
+    .notes-component-holder{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 600px){

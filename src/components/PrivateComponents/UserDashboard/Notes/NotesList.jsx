@@ -6,13 +6,10 @@ export default function NotesList() {
     return (
         <div className='notes-list-home-page'>
             <div className="notes-list-home-container">
-                <div className="note-home-page">Note</div>
-                <div className="note-home-page">Note</div>
-                <div className="note-home-page">Note</div>
-                <div className="note-home-page">Note</div>
-                <div className="note-home-page">Note</div>
-                <div className="note-home-page">Note</div>
-                <div className="note-home-page">Note</div>
+                <Note />
+                <Note />
+                <Note />
+                <Note />
             </div>
         </div>
     )

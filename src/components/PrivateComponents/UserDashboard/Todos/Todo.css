@@ -1,0 +1,64 @@
+.todo-component-home{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    height: 80px;
+}
+
+.todo-component-home-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-component-home-title{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.todo-component-home-time{
+    font-size: 14px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.todo-component-home-footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-component-home-footer-progress{
+    font-size: 14px;
+    height: 25px;
+    width: 80px;
+    color: var(--completed-font-color);
+    background-color: var(--completed-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.todo-component-home-footer-priority{
+    font-size: 14px;
+    height: 25px;
+    width: 80px;
+    color: white;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}

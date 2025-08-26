@@ -8,6 +8,7 @@ import WhatDo from "../../components/PublicComponents/WhatDo.jsx";
 import Advantages from "../../components/PublicComponents/Advantages.jsx";
 import TalkToExpert from "../../components/PublicComponents/TalkToExpert.jsx";
 import Footer from "../../components/PublicComponents/Footer.jsx";
+import Cookies from "../../components/PublicComponents/Cookies.jsx";
 
 export default function Home() {
     return (
@@ -21,6 +22,7 @@ export default function Home() {
             <Advantages />
             <TalkToExpert />
             <Footer />
+            <Cookies />
         </div>
     );
 }

@@ -4,8 +4,17 @@
 
 :root {
     --theme-color: #514EF3;
+    --theme-color-hover: #3e3bbf;
     --border-color: #d1d1d1;
     --theme-color-hover: #3e3bbf;
+    --completed-font-color: #5B983D;
+    --completed-bg-color: #F7FFEC;
+    --on-hold-font-color: #E7AF5C;
+    --on-hold-bg-color: #FFF9EB;
+    --pending-font-color: #795CA2;
+    --pending-bg-color: #FBF0FF;
+    --in-progress-font-color: #007C91;
+    --in-progress-bg-color: #E0F7F9;
 }
 
 *{
@@ -15,21 +24,22 @@
     scroll-behavior: smooth;
 }
 
+
+
 body {
-    --sb-thumb-color: #646464;
+    --sb-thumb-color: #8e8e8e;
     --sb-size: 10px;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: var(--sb-size)
 }
 
-body::-webkit-scrollbar-track {
-    background: var(--sb-track-color);
+*::-webkit-scrollbar-track {
     border-radius: 18px;
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background: var(--sb-thumb-color);
     border-radius: 18px;
 }
@@ -37,7 +47,6 @@ body::-webkit-scrollbar-thumb {
 @supports not selector(::-webkit-scrollbar) {
     body {
         scrollbar-color: var(--sb-thumb-color)
-                        var(--sb-track-color);
     }
 }
 
