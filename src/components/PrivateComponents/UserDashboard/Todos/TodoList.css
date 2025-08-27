@@ -1,15 +1,15 @@
-.todo-list-home-page{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    overflow: auto;
-    height: 300px;
-    overflow-y: auto;
+.todo-list-home-page {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	overflow: auto;
+	height: 300px;
+	overflow-y: auto;
 }
 
-.todo-list-home-container{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding-right: 10px;
+.todo-list-home-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding-right: 10px;
 }

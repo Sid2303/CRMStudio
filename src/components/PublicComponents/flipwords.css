@@ -1,0 +1,58 @@
+.flipwords {
+	display: inline-block;
+	position: relative;
+	perspective: 800px;
+	color: var(--theme-color);
+}
+
+.flipword {
+	display: inline-block;
+	will-change: transform, opacity;
+	transform-origin: 50% 70%;
+	transition: transform 220ms ease, opacity 220ms ease;
+}
+
+.flipword.enter {
+	transform: rotateX(0deg) scale(1);
+	opacity: 1;
+}
+
+.flipword.idle {
+	transform: none;
+	opacity: 1;
+}
+
+.flipword.exit {
+	transform: rotateX(90deg) scale(0.96);
+	opacity: 0;
+}
+
+@media (max-width: 550px) {
+	.flipword {
+		transition-duration: 200ms;
+	}
+}
+.flip-words {
+	display: inline-block;
+	font-weight: 600;
+	color: var(--theme-color, #2563eb);
+	will-change: transform, opacity;
+	transition: transform 0.25s ease, opacity 0.25s ease;
+	min-width: 0;
+}
+
+.flip-words.flipping {
+	transform: rotateX(90deg) scale(0.95);
+	opacity: 0;
+}
+
+.flip-words:not(.flipping) {
+	transform: rotateX(0deg) scale(1);
+	opacity: 1;
+}
+
+@media (max-width: 550px) {
+	.flip-words {
+		display: inline;
+	}
+}

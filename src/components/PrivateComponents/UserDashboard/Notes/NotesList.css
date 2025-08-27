@@ -1,14 +1,14 @@
-.notes-list-home-page{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 300px;
-    overflow: auto;
+.notes-list-home-page {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	height: 300px;
+	overflow: auto;
 }
 
-.notes-list-home-container{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding-right: 10px;
+.notes-list-home-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding-right: 10px;
 }
