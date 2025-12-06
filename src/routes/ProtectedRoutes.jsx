@@ -1,11 +1,12 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import CompanyDashboard from '../pages/private/CompanyDashboard.jsx';
 import Dashboard from '../pages/private/Dashboard/Dashboard.jsx';
 import PvtLayout from '../layouts/PvtLayout.jsx';
 import ToDo from '../pages/private/ToDo/ToDo.jsx';
+import SelectedTodo from '../pages/private/ToDo/Components/SelectedTodo.jsx';
 import Notes from '../pages/private/Notes/Notes.jsx';
-
+import Projects from '../pages/private/Projects/Projects.jsx';
+import Bussiness from '../pages/private/Bussiness/Bussiness.jsx';
 
 export default function ProtectedRoutes() {
 	return (
@@ -13,33 +14,65 @@ export default function ProtectedRoutes() {
 			<Route
 				path="/dashboard"
 				element={
-						<PvtLayout>
-							<Dashboard />
-						</PvtLayout>
+					<PvtLayout pageTitle="Dashboard">
+						<Dashboard />
+					</PvtLayout>
+				}
+			/>
+
+			{/* <Route
+				path="/companydashboard"
+				element={
+					<PvtLayout>
+						<CompanyDashboard />
+					</PvtLayout>
+				}
+			/> */}
+
+			<Route
+				path="/todo"
+				element={
+					<PvtLayout pageTitle="To-Do List">
+						<ToDo />
+					</PvtLayout>
 				}
 			/>
 
 			<Route
-				path="/companydashboard"
+				path="/todo/:id"
 				element={
-						<PvtLayout>
-							<CompanyDashboard />
-						</PvtLayout>
+					<PvtLayout pageTitle="Todo Details">
+						<SelectedTodo />
+					</PvtLayout>
 				}
 			/>
 
-            <Route path='/todo' element={
-                <PvtLayout>
-                    <ToDo />
-                </PvtLayout>
-            } />
+			<Route
+				path="/notes"
+				element={
+					<PvtLayout pageTitle="Notes">
+						<Notes />
+					</PvtLayout>
+				}
+			/>
 
-            <Route path='/notes' element={
-                <PvtLayout>
-                    <Notes />
-                </PvtLayout>
-            } />
+			<Route
+				path="/projects"
+				element={
+					<PvtLayout pageTitle="Projects">
+						<Projects />
+					</PvtLayout>
+				}
+			/>
 
+			<Route
+				path="/bussiness"
+				element={
+					<PvtLayout pageTitle="Business">
+						<Bussiness />
+					</PvtLayout>
+				}
+			/>
 		</Routes>
 	);
 }

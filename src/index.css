@@ -1,85 +1,161 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-    --theme-color: #514EF3;
-    --theme-color-hover: #3e3bbf;
-    --border-color: #d1d1d1;
-    --theme-color-hover: #3e3bbf;
-    --completed-font-color: #5B983D;
-    --completed-bg-color: #F7FFEC;
-    --on-hold-font-color: #E7AF5C;
-    --on-hold-bg-color: #FFF9EB;
-    --pending-font-color: #795CA2;
-    --pending-bg-color: #FBF0FF;
-    --in-progress-font-color: #007C91;
-    --in-progress-bg-color: #E0F7F9;
+	--theme-color: #514ef3;
+	--theme-color-hover: #3e3bbf;
+	--border-color: #d1d1d1;
+	--theme-color-hover: #3e3bbf;
+	--completed-font-color: #5b983d;
+	--completed-bg-color: #f7ffec;
+	--on-hold-font-color: #e7af5c;
+	--on-hold-bg-color: #fff9eb;
+	--pending-font-color: #795ca2;
+	--pending-bg-color: #fbf0ff;
+	--in-progress-font-color: #007c91;
+	--in-progress-bg-color: #e0f7f9;
+	--success-bg-color: #dcfce7;
+	--success-font-color: #16a34a;
+	--warning-bg-color: #fef9c3;
+	--warning-font-color: #cc8e0b;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
-
-
 
 body {
-    --sb-thumb-color: #8e8e8e;
-    --sb-size: 10px;
+	--sb-thumb-color: #8e8e8e;
+	--sb-size: 10px;
 }
 
 *::-webkit-scrollbar {
-    width: var(--sb-size)
+	width: var(--sb-size);
 }
 
 *::-webkit-scrollbar-track {
-    border-radius: 18px;
+	border-radius: 18px;
 }
 
 *::-webkit-scrollbar-thumb {
-    background: var(--sb-thumb-color);
-    border-radius: 18px;
+	background: var(--sb-thumb-color);
+	border-radius: 18px;
 }
 
 @supports not selector(::-webkit-scrollbar) {
-    body {
-        scrollbar-color: var(--sb-thumb-color)
-    }
+	body {
+		scrollbar-color: var(--sb-thumb-color);
+	}
 }
 
 textarea {
-    resize: none;
+	resize: none;
 }
 
-button:hover{
-    cursor: pointer;
+button:hover {
+	cursor: pointer;
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-optical-sizing: auto;
-    color: #333;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-optical-sizing: auto;
+	color: #333;
 }
 
 li {
-    list-style: none;
+	list-style: none;
 }
 
 /* Restore semantic heading styles overridden by Tailwind Preflight */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    line-height: 1.25;
-    color: inherit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	line-height: 1.25;
+	color: inherit;
 }
 
-h1 { font-size: 2rem; margin: 1.5rem 0 0.75rem; }
-h2 { font-size: 1.5rem; margin: 1.25rem 0 0.5rem; }
-h3 { font-size: 1.25rem; margin: 1rem 0 0.5rem; }
-h4 { font-size: 1.125rem; margin: 0.75rem 0 0.5rem; }
-h5 { font-size: 1rem; margin: 0.5rem 0 0.25rem; }
-h6 { font-size: 0.875rem; margin: 0.5rem 0 0.25rem; }
+h1 {
+	font-size: 2rem;
+	margin: 1.5rem 0 0.75rem;
+}
+h2 {
+	font-size: 1.5rem;
+	margin: 1.25rem 0 0.5rem;
+}
+h3 {
+	font-size: 1.25rem;
+	margin: 1rem 0 0.5rem;
+}
+h4 {
+	font-size: 1.125rem;
+	margin: 0.75rem 0 0.5rem;
+}
+h5 {
+	font-size: 1rem;
+	margin: 0.5rem 0 0.25rem;
+}
+h6 {
+	font-size: 0.875rem;
+	margin: 0.5rem 0 0.25rem;
+}
+
+.progress-button {
+	padding: 7px;
+	border-radius: 12px;
+	width: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+.border-default {
+	border: 2px solid var(--border-color);
+}
+
+.project-dashboard {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 10px;
+	border-radius: 12px;
+}
+
+.padding-right-10 {
+	padding-right: 10px;
+}
+
+.employee-header-global {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #f5f5f5;
+	overflow: hidden;
+	margin-left: 240px;
+	padding: 0 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1000px) {
+	.employee-header-global {
+		margin-left: 100px;
+	}
+}
+
+@media (max-width: 750px) {
+	.employee-header-global {
+		margin-left: 0;
+	}
+}

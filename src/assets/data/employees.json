@@ -1,0 +1,104 @@
+[
+    {
+        "name": "Sarah Johnson",
+        "title": "Senior Software Engineer",
+        "department": "Engineering",
+        "status": "active",
+        "email": "sarah.johnson@company.com",
+        "phone": "+1 (555) 123-4567",
+        "image": "https://randomuser.me/api/portraits/women/44.jpg",
+        "role": "employee",
+        "selected": "false"
+    },
+    {
+        "name": "Michael Smith",
+        "title": "Product Manager",
+        "department": "Product",
+        "status": "active",
+        "email": "michael.smith@company.com",
+        "phone": "+1 (555) 234-5678",
+        "image": "https://randomuser.me/api/portraits/men/45.jpg",
+        "role": "manager",
+        "selected": "false"
+    },
+    {
+        "name": "Emily Davis",
+        "title": "UX Designer",
+        "department": "Design",
+        "status": "inactive",
+        "email": "emily.davis@company.com",
+        "phone": "+1 (555) 345-6789",
+        "image": "https://randomuser.me/api/portraits/women/46.jpg",
+        "role": "employee"
+    },
+    {
+        "name": "James Wilson",
+        "title": "Frontend Developer",
+        "department": "Engineering",
+        "status": "active",
+        "email": "james.wilson@company.com",
+        "phone": "+1 (555) 456-7890",
+        "image": "https://randomuser.me/api/portraits/men/47.jpg",
+        "role": "employee"
+    },
+    {
+        "name": "Sophia Martinez",
+        "title": "Data Scientist",
+        "department": "Data",
+        "status": "active",
+        "email": "sophia.martinez@company.com",
+        "phone": "+1 (555) 567-8901",
+        "image": "https://randomuser.me/api/portraits/women/48.jpg",
+        "role": "employee"
+    },
+    {
+        "name": "Daniel Anderson",
+        "title": "Backend Developer",
+        "department": "Engineering",
+        "status": "inactive",
+        "email": "daniel.anderson@company.com",
+        "phone": "+1 (555) 678-9012",
+        "image": "https://randomuser.me/api/portraits/men/49.jpg",
+        "role": "employee"
+    },
+    {
+        "name": "Olivia Brown",
+        "title": "HR Manager",
+        "department": "Human Resources",
+        "status": "active",
+        "email": "olivia.brown@company.com",
+        "phone": "+1 (555) 789-0123",
+        "image": "https://randomuser.me/api/portraits/women/50.jpg",
+        "role": "manager"
+    },
+    {
+        "name": "Ethan Lee",
+        "title": "DevOps Engineer",
+        "department": "Engineering",
+        "status": "active",
+        "email": "ethan.lee@company.com",
+        "phone": "+1 (555) 890-1234",
+        "image": "https://randomuser.me/api/portraits/men/51.jpg",
+        "role": "employee"
+    },
+    {
+        "name": "Ava Thompson",
+        "title": "Marketing Specialist",
+        "department": "Marketing",
+        "status": "inactive",
+        "email": "ava.thompson@company.com",
+        "phone": "+1 (555) 901-2345",
+        "image": "https://randomuser.me/api/portraits/women/52.jpg",
+        "role": "employee"
+    },
+    {
+        "name": "William Garcia",
+        "title": "QA Engineer",
+        "department": "Quality Assurance",
+        "status": "active",
+        "email": "william.garcia@company.com",
+        "phone": "+1 (555) 012-3456",
+        "image": "https://randomuser.me/api/portraits/men/53.jpg",
+        "role": "admin"
+    }
+]

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../../components/PublicComponents/Navbar.jsx';
 import HeroSection from '../../components/PublicComponents/HeroSection.jsx';
 import SleekSlider from '../../components/PublicComponents/SleekSlider.jsx';
@@ -9,10 +9,14 @@ import Advantages from '../../components/PublicComponents/Advantages.jsx';
 import TalkToExpert from '../../components/PublicComponents/TalkToExpert.jsx';
 import Footer from '../../components/PublicComponents/Footer.jsx';
 import Cookies from '../../components/PublicComponents/Cookies.jsx';
+import ProgressBar from '../../components/ProgressBar/ProgressBar.jsx';
+import setData from '../../utils/setData.js';
 
 export default function Home() {
+	useEffect(() => setData(), []);
 	return (
 		<div>
+			<ProgressBar />
 			<Navbar />
 			<HeroSection />
 			<SleekSlider />
@@ -22,7 +26,7 @@ export default function Home() {
 			<Advantages />
 			<TalkToExpert />
 			<Footer />
-			<Cookies />
+			{/* <Cookies /> */}
 		</div>
 	);
 }

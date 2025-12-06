@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "employeeId": 101,
+        "name": "Siddhant Rawat",
+        "type": "Annual",
+        "startDate": "2025-09-10",
+        "endDate": "2025-09-15",
+        "status": "Approved",
+        "reason": "Family vacation",
+        "appliedOn": "2025-09-01",
+        "approvedBy": "Manager A"
+    },
+    {
+        "id": 2,
+        "employeeId": 102,
+        "name": "Yash Singh",
+        "type": "Sick",
+        "startDate": "2025-08-20",
+        "endDate": "2025-08-22",
+        "status": "Pending",
+        "reason": "Flu",
+        "appliedOn": "2025-08-19",
+        "approvedBy": ""
+    },
+    {
+        "id": 3,
+        "employeeId": 103,
+        "name": "Priya Sharma",
+        "type": "Maternity",
+        "startDate": "2025-07-01",
+        "endDate": "2025-10-01",
+        "status": "Approved",
+        "reason": "Maternity leave",
+        "appliedOn": "2025-06-15",
+        "approvedBy": "HR"
+    },
+    {
+        "id": 4,
+        "employeeId": 104,
+        "name": "Rahul Verma",
+        "type": "Casual",
+        "startDate": "2025-09-05",
+        "endDate": "2025-09-06",
+        "status": "Rejected",
+        "reason": "Personal work",
+        "appliedOn": "2025-09-03",
+        "approvedBy": "Manager B"
+    },
+    {
+        "id": 5,
+        "employeeId": 105,
+        "name": "Anjali Mehta",
+        "type": "Annual",
+        "startDate": "2025-10-10",
+        "endDate": "2025-10-15",
+        "status": "Pending",
+        "reason": "Travel",
+        "appliedOn": "2025-09-30",
+        "approvedBy": ""
+    },
+    {
+        "id": 6,
+        "employeeId": 106,
+        "name": "Vikram Chauhan",
+        "type": "Sick",
+        "startDate": "2025-08-12",
+        "endDate": "2025-08-14",
+        "status": "Approved",
+        "reason": "Fever",
+        "appliedOn": "2025-08-11",
+        "approvedBy": "Manager C"
+    },
+    {
+        "id": 7,
+        "employeeId": 107,
+        "name": "Neha Gupta",
+        "type": "Annual",
+        "startDate": "2025-09-18",
+        "endDate": "2025-09-20",
+        "status": "Pending",
+        "reason": "Family event",
+        "appliedOn": "2025-09-10",
+        "approvedBy": ""
+    },
+    {
+        "id": 8,
+        "employeeId": 108,
+        "name": "Amit Joshi",
+        "type": "Casual",
+        "startDate": "2025-09-12",
+        "endDate": "2025-09-13",
+        "status": "Approved",
+        "reason": "Urgent work",
+        "appliedOn": "2025-09-11",
+        "approvedBy": "Manager D"
+    },
+    {
+        "id": 9,
+        "employeeId": 109,
+        "name": "Riya Kapoor",
+        "type": "Sick",
+        "startDate": "2025-08-25",
+        "endDate": "2025-08-27",
+        "status": "Rejected",
+        "reason": "Migraine",
+        "appliedOn": "2025-08-24",
+        "approvedBy": "Manager E"
+    },
+    {
+        "id": 10,
+        "employeeId": 110,
+        "name": "Karan Patel",
+        "type": "Annual",
+        "startDate": "2025-09-22",
+        "endDate": "2025-09-25",
+        "status": "Approved",
+        "reason": "Holiday",
+        "appliedOn": "2025-09-15",
+        "approvedBy": "Manager F"
+    }
+]

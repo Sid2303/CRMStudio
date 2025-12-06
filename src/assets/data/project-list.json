@@ -1,0 +1,470 @@
+[
+    {
+        "title":  "Portfolio Website",
+        "priority":  "High",
+        "currentState":  "Completed",
+        "description":  "This project involved designing and developing a highly personalized portfolio website to professionally showcase my personal achievements, technical skills, and a diverse collection of project work. The site includes interactive elements, responsive layouts for mobile and desktop users, a modern contact form, testimonials, and visual representations of my expertise. Its aim was to create a strong personal brand online and function as a digital resume that is easily accessible by potential employers or clients.",
+        "projectType":  "Web Development",
+        "createdDate":  "2024-01-10",
+        "dueDate":  "2024-02-15",
+        "actualCostSpent":  250,
+        "discussedPrice":  250,
+        "billingStatus":  "Paid",
+        "customerCompanyName":  "Self",
+        "customerName":  "John Doe",
+        "customerEmail":  "johndoe@example.com",
+        "customerPhone":  "+91-9000000001",
+        "membersCount":  1,
+        "members":  [
+                        {
+                            "name":  "John Doe",
+                            "role":  "Developer \u0026 Designer"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "E-commerce App",
+        "priority":  "High",
+        "currentState":  "In Progress",
+        "description":  "The E-commerce App is an advanced online platform that allows users to conveniently browse, search, and purchase products across a wide range of categories. It features robust product listing, categorization, real-time inventory updates, secure payment gateway integration, user reviews, personalized recommendations, an intuitive user interface, and an easy-to-use admin dashboard. The app supports promotional campaigns and analytics, aiming to deliver a seamless and secure online shopping experience for users and comprehensive management tools for merchants.",
+        "projectType":  "App Development",
+        "createdDate":  "2025-01-10",
+        "dueDate":  "2025-05-31",
+        "actualCostSpent":  3500,
+        "discussedPrice":  5000,
+        "billingStatus":  "Billed",
+        "customerCompanyName":  "ShopEase Pvt Ltd",
+        "customerName":  "Priya Sharma",
+        "customerEmail":  "priya@shopease.com",
+        "customerPhone":  "+91-9000000002",
+        "membersCount":  4,
+        "members":  [
+                        {
+                            "name":  "Anil Kumar",
+                            "role":  "Frontend Developer"
+                        },
+                        {
+                            "name":  "Rachel Singh",
+                            "role":  "Backend Developer"
+                        },
+                        {
+                            "name":  "Nitesh Agarwal",
+                            "role":  "UI/UX Designer"
+                        },
+                        {
+                            "name":  "Sunita Nair",
+                            "role":  "QA Engineer"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "Chat App",
+        "priority":  "Medium",
+        "currentState":  "Pending",
+        "description":  "This real-time Chat Application is designed to facilitate instantaneous communication between users, utilizing WebSockets for reliable, low-latency message exchanges. The app will support one-on-one and group conversations, typing indicators, user statuses, read receipts, multimedia sharing (images, files, voice notes), and secure user authentication. The project also aims to offer a clean, responsive interface with push notifications, message search, custom emojis, and privacy controls, positioning it as a user-friendly and feature-rich platform for modern digital communication.",
+        "projectType":  "App Development",
+        "createdDate":  "2025-07-01",
+        "dueDate":  "2025-09-01",
+        "actualCostSpent":  0,
+        "discussedPrice":  1200,
+        "billingStatus":  "Not Billed",
+        "customerCompanyName":  "QuickConnect",
+        "customerName":  "Arjun Patel",
+        "customerEmail":  "arjun@quickconnect.com",
+        "customerPhone":  "+91-9000000003",
+        "membersCount":  3,
+        "members":  [
+                        {
+                            "name":  "Arjun Patel",
+                            "role":  "Project Manager"
+                        },
+                        {
+                            "name":  "Megha Roy",
+                            "role":  "Full Stack Developer"
+                        },
+                        {
+                            "name":  "Rahul Verma",
+                            "role":  "QA Tester"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "Portfolio Website",
+        "priority":  "Medium",
+        "currentState":  "Completed",
+        "description":  "A modern, single-page personal site built to serve as both a portfolio and a curriculum vitae for an individual. The site highlights major projects, skill sets, work history, educational qualifications, and includes features such as custom galleries, interactive resumes, a downloadable PDF CV, blog section, testimonials from clients or colleagues, contact form with spam protection, and SEO optimization. All content is easily manageable and updatable through a simple backend.",
+        "projectType":  "Web Development",
+        "createdDate":  "2023-09-10",
+        "dueDate":  "2023-10-05",
+        "actualCostSpent":  200,
+        "discussedPrice":  200,
+        "billingStatus":  "Paid",
+        "customerCompanyName":  "Self",
+        "customerName":  "Sarah Lee",
+        "customerEmail":  "sarah@example.com",
+        "customerPhone":  "+91-9000000004",
+        "membersCount":  1,
+        "members":  [
+                        {
+                            "name":  "Sarah Lee",
+                            "role":  "Developer \u0026 Owner"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "E-commerce Platform",
+        "priority":  "High",
+        "currentState":  "On Hold",
+        "description":  "This project aims to deliver a complete, scalable e-commerce solution featuring multivendor support, flexible product categorization, dynamic pricing, order tracking, returns/refunds, seller/buyer dashboards, secure payment processing, and integration with shipping carriers for real-time status updates. Admins have analytics and marketing campaign tools. The platform is built with robust security, high performance, and modularity, addressing the full spectrum of retail business needs online.",
+        "projectType":  "Web Development",
+        "createdDate":  "2025-03-15",
+        "dueDate":  "2025-09-20",
+        "actualCostSpent":  1800,
+        "discussedPrice":  6000,
+        "billingStatus":  "Partially Paid",
+        "customerCompanyName":  "MarketHub",
+        "customerName":  "Vaibhav Mehta",
+        "customerEmail":  "vaibhav@markethub.com",
+        "customerPhone":  "+91-9000000005",
+        "membersCount":  4,
+        "members":  [
+                        {
+                            "name":  "Vaibhav Mehta",
+                            "role":  "Project Lead"
+                        },
+                        {
+                            "name":  "Simran Kaur",
+                            "role":  "Developer"
+                        },
+                        {
+                            "name":  "Anthony D\u0027Souza",
+                            "role":  "Designer"
+                        },
+                        {
+                            "name":  "Kavya Rai",
+                            "role":  "QA"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "Job Board",
+        "priority":  "Medium",
+        "currentState":  "Pending",
+        "description":  "A complete job board platform where employers can post job vacancies, jobseekers can search and apply for positions, and both sides can track applications through intuitive dashboards. The system provides advanced filtering, applicant resume parsing, application management, notifications, and analytics for hiring trends. Employers can promote roles via featured listings and target specific candidate profiles, while jobseekers receive recommendations and interview reminders.",
+        "projectType":  "Web Development",
+        "createdDate":  "2025-05-01",
+        "dueDate":  "2025-08-10",
+        "actualCostSpent":  0,
+        "discussedPrice":  4000,
+        "billingStatus":  "Not Billed",
+        "customerCompanyName":  "HireXpress",
+        "customerName":  "Rohit Jain",
+        "customerEmail":  "rohit@hirexpress.com",
+        "customerPhone":  "+91-9000000006",
+        "membersCount":  5,
+        "members":  [
+                        {
+                            "name":  "Rohit Jain",
+                            "role":  "Product Manager"
+                        },
+                        {
+                            "name":  "Preeti Singh",
+                            "role":  "Backend Developer"
+                        },
+                        {
+                            "name":  "Hassan Ali",
+                            "role":  "Frontend Developer"
+                        },
+                        {
+                            "name":  "Reena Das",
+                            "role":  "UI Designer"
+                        },
+                        {
+                            "name":  "Manisha Ghosh",
+                            "role":  "Tester"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "Task Manager",
+        "priority":  "Medium",
+        "currentState":  "Completed",
+        "description":  "A robust tool to help users organize, track, and manage both personal and professional tasks. Featuring project creation, task assignment, prioritization, reminders, deadline tracking, progress visualization through charts, and integrations with calendars and email. Built with collaboration in mind, the app supports subtasks, attachment uploads, comments, notifications, and a clear permissions system. It empowers individuals and teams to boost productivity and meet deadlines efficiently.",
+        "projectType":  "App Development",
+        "createdDate":  "2024-05-10",
+        "dueDate":  "2024-07-20",
+        "actualCostSpent":  900,
+        "discussedPrice":  1200,
+        "billingStatus":  "Paid",
+        "customerCompanyName":  "Productive Inc.",
+        "customerName":  "Maya Pillai",
+        "customerEmail":  "maya@productiveinc.com",
+        "customerPhone":  "+91-9000000007",
+        "membersCount":  2,
+        "members":  [
+                        {
+                            "name":  "Maya Pillai",
+                            "role":  "Team Lead"
+                        },
+                        {
+                            "name":  "Sumit Kumar",
+                            "role":  "Developer"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "Recipe Finder",
+        "priority":  "Low",
+        "currentState":  "On Hold",
+        "description":  "A user-friendly web application allowing users to discover an endless variety of recipes by ingredient, cuisine, meal type, or dietary restriction. Features include user accounts, recipe saving, step-by-step instructions with timers, nutrition facts, a shopping list generator, video guides, and an interactive ingredient selection tool. Community-driven recipes can be rated and commented, and future plans include integration with local grocery delivery services.",
+        "projectType":  "Web Development",
+        "createdDate":  "2025-06-01",
+        "dueDate":  "2025-10-01",
+        "actualCostSpent":  100,
+        "discussedPrice":  900,
+        "billingStatus":  "Not Billed",
+        "customerCompanyName":  "TryTasty Foods",
+        "customerName":  "Divya Kapoor",
+        "customerEmail":  "divya@trytasty.com",
+        "customerPhone":  "+91-9000000008",
+        "membersCount":  2,
+        "members":  [
+                        {
+                            "name":  "Divya Kapoor",
+                            "role":  "Product Manager"
+                        },
+                        {
+                            "name":  "Ritika Malhotra",
+                            "role":  "Frontend Developer"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "Finance Tracker",
+        "priority":  "Medium",
+        "currentState":  "Pending",
+        "description":  "The Finance Tracker is an advanced personal finance management application enabling users to track income and expenses, set up savings goals, categorize transactions, and view insightful reports and charts of their spending behavior. Featuring real-time sync with bank feeds, alerts on overspending, budgeting tools, recurring transactions, and secure multi-factor authentication, this solution empowers users to make smarter financial decisions and plan for the future confidently.",
+        "projectType":  "App Development",
+        "createdDate":  "2025-07-15",
+        "dueDate":  "2025-11-15",
+        "actualCostSpent":  0,
+        "discussedPrice":  1700,
+        "billingStatus":  "Not Billed",
+        "customerCompanyName":  "MoneyMap",
+        "customerName":  "Esha Bhatt",
+        "customerEmail":  "esha@moneymap.com",
+        "customerPhone":  "+91-9000000009",
+        "membersCount":  3,
+        "members":  [
+                        {
+                            "name":  "Esha Bhatt",
+                            "role":  "Product Lead"
+                        },
+                        {
+                            "name":  "Jatin Shah",
+                            "role":  "Backend Developer"
+                        },
+                        {
+                            "name":  "Sneha Iyer",
+                            "role":  "Designer"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "Fitness App",
+        "priority":  "High",
+        "currentState":  "Completed",
+        "description":  "A comprehensive fitness application designed to help users track their workout routines, log nutrition, set and monitor fitness goals, and measure progress over time. Key features include custom workout planning, automatic activity tracking via device sensors, nutrition logging, progress charts, integration with smartwatches and fitness devices, achievement badges, social sharing, and a rich content library with exercise guides and healthy recipes.",
+        "projectType":  "App Development",
+        "createdDate":  "2024-02-01",
+        "dueDate":  "2024-04-10",
+        "actualCostSpent":  1600,
+        "discussedPrice":  2000,
+        "billingStatus":  "Paid",
+        "customerCompanyName":  "ActiveLife Tech",
+        "customerName":  "Nikhil Rao",
+        "customerEmail":  "nikhil@activelife.com",
+        "customerPhone":  "+91-9000000010",
+        "membersCount":  3,
+        "members":  [
+                        {
+                            "name":  "Nikhil Rao",
+                            "role":  "Business Lead"
+                        },
+                        {
+                            "name":  "Kavita Sharma",
+                            "role":  "Mobile Developer"
+                        },
+                        {
+                            "name":  "Yusuf Hashmi",
+                            "role":  "QA Engineer"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "Blog CMS",
+        "priority":  "Low",
+        "currentState":  "Pending",
+        "description":  "A scalable, flexible content management system (CMS) focused on blogging. Authors can write, edit, and schedule posts, manage media, create custom tags and categories, and control publication status. Readers can comment, bookmark, and share posts, and site owners can manage user permissions, customize site appearance, and track user engagement analytics. Built with high security, easy extensibility, and smooth publishing workflow in mind.",
+        "projectType":  "Web Development",
+        "createdDate":  "2025-04-18",
+        "dueDate":  "2025-12-01",
+        "actualCostSpent":  0,
+        "discussedPrice":  850,
+        "billingStatus":  "Not Billed",
+        "customerCompanyName":  "Self",
+        "customerName":  "Kriti Gupta",
+        "customerEmail":  "kriti@example.com",
+        "customerPhone":  "+91-9000000011",
+        "membersCount":  1,
+        "members":  [
+                        {
+                            "name":  "Kriti Gupta",
+                            "role":  "Sole Developer"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "Online Quiz App",
+        "priority":  "Medium",
+        "currentState":  "On Hold",
+        "description":  "An interactive quiz platform where users can create, share, and take quizzes covering a vast array of topics and difficulty levels. Features include real-time multiplayer quizzes, instant scoring, leaderboard rankings, question randomization, detailed performance analytics, social media integration, and tools for educators to create assignments and track student progress.",
+        "projectType":  "App Development",
+        "createdDate":  "2025-08-01",
+        "dueDate":  "2025-12-10",
+        "actualCostSpent":  300,
+        "discussedPrice":  1000,
+        "billingStatus":  "Not Billed",
+        "customerCompanyName":  "EduFun Labs",
+        "customerName":  "Tanya Joseph",
+        "customerEmail":  "tanya@edufun.com",
+        "customerPhone":  "+91-9000000012",
+        "membersCount":  2,
+        "members":  [
+                        {
+                            "name":  "Tanya Joseph",
+                            "role":  "Product Manager"
+                        },
+                        {
+                            "name":  "Harish Iyer",
+                            "role":  "Developer"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "Event Planner",
+        "priority":  "High",
+        "currentState":  "Completed",
+        "description":  "A robust platform allowing users and businesses to schedule events, send invitations, manage guest lists, coordinate tasks, and handle RSVPs. The system supports real-time notifications, integrated calendar sync, group communications, budget tracking, and vendor management tools, making event planning for any scale (from meetings to large conferences) seamless and efficient.",
+        "projectType":  "Web Development",
+        "createdDate":  "2024-06-15",
+        "dueDate":  "2024-09-01",
+        "actualCostSpent":  1700,
+        "discussedPrice":  2100,
+        "billingStatus":  "Paid",
+        "customerCompanyName":  "EventNest",
+        "customerName":  "Alok Desai",
+        "customerEmail":  "alok@eventnest.com",
+        "customerPhone":  "+91-9000000013",
+        "membersCount":  4,
+        "members":  [
+                        {
+                            "name":  "Alok Desai",
+                            "role":  "Product Lead"
+                        },
+                        {
+                            "name":  "Farah Patel",
+                            "role":  "Frontend Dev"
+                        },
+                        {
+                            "name":  "Zubin Merchant",
+                            "role":  "Backend Dev"
+                        },
+                        {
+                            "name":  "Shruti Prasad",
+                            "role":  "QA"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "Job Portal",
+        "priority":  "High",
+        "currentState":  "Completed",
+        "description":  "A holistic job portal platform enabling job seekers to easily search, apply, and get notified for relevant jobs, while recruiters can post vacancies, filter applicants, conduct online interviews, and manage application pipelines. Includes resume parsing, advanced matching algorithms, application status tracking, and in-app messaging, delivering a full end-to-end hiring workflow.",
+        "projectType":  "Web Development",
+        "createdDate":  "2024-11-01",
+        "dueDate":  "2025-01-15",
+        "actualCostSpent":  2500,
+        "discussedPrice":  3000,
+        "billingStatus":  "Paid",
+        "customerCompanyName":  "JobVerse",
+        "customerName":  "Neha Puri",
+        "customerEmail":  "neha@jobverse.com",
+        "customerPhone":  "+91-9000000014",
+        "membersCount":  5,
+        "members":  [
+                        {
+                            "name":  "Neha Puri",
+                            "role":  "Business Lead"
+                        },
+                        {
+                            "name":  "Ajay Rathod",
+                            "role":  "Frontend Dev"
+                        },
+                        {
+                            "name":  "Fatima Zahra",
+                            "role":  "Backend Dev"
+                        },
+                        {
+                            "name":  "Manoj Samuel",
+                            "role":  "UI Designer"
+                        },
+                        {
+                            "name":  "Snehal Salunkhe",
+                            "role":  "QA Officer"
+                        }
+                    ],
+        "selected":  false
+    },
+    {
+        "title":  "Recipe Finder",
+        "priority":  "Low",
+        "currentState":  "In Progress",
+        "description":  "An ongoing web app that lets users search and save recipes based on ingredients, taste preferences, and dietary restrictions. Current modules offer user registration, ingredient-based filters, interactive recipe steps with timers, and an option to generate shopping lists. Plans include community recipe uploads and integration of video tutorials.",
+        "projectType":  "Web Development",
+        "createdDate":  "2025-06-20",
+        "dueDate":  "2025-10-15",
+        "actualCostSpent":  30,
+        "discussedPrice":  600,
+        "billingStatus":  "Not Billed",
+        "customerCompanyName":  "TryTasty Foods",
+        "customerName":  "Divya Kapoor",
+        "customerEmail":  "divya@trytasty.com",
+        "customerPhone":  "+91-9000000008",
+        "membersCount":  2,
+        "members":  [
+                        {
+                            "name":  "Divya Kapoor",
+                            "role":  "Product Manager"
+                        },
+                        {
+                            "name":  "Ritika Malhotra",
+                            "role":  "Frontend Developer"
+                        }
+                    ],
+        "selected":  false
+    }
+]

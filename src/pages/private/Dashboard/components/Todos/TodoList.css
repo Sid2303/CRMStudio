@@ -1,0 +1,14 @@
+.todo-list-home-page {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	height: 300px;
+	overflow-y: auto;
+}
+
+.todo-list-home-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding-right: 10px;
+}

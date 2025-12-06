@@ -1,0 +1,125 @@
+/* Todo Card Styles */
+.todo {
+	display: flex;
+	justify-content: start;
+	border: 2px solid rgb(188, 188, 188);
+	width: 100%;
+	height: 180px;
+	border-radius: 12px;
+	padding: 15px;
+	gap: 10px;
+	transition: 0.3s;
+}
+
+.todo:hover {
+	box-shadow: 10px 10px 5px -1px rgba(0, 0, 0, 0.09);
+}
+
+.todo-status {
+	display: flex;
+	height: 100%;
+}
+
+.status {
+	height: 15px;
+	width: 15px;
+	border: 2.5px solid transparent;
+	border-radius: 50%;
+}
+
+.todo-status .completed {
+	border-color: #00c853;
+	background-color: transparent;
+}
+
+.todo-status .in-progress {
+	background-color: transparent;
+	border-color: #2979ff;
+}
+
+.todo-status .not-started {
+	background-color: transparent;
+	border-color: #b0bec5;
+}
+
+.todo-data {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	gap: 20px;
+}
+
+.todo-content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 95%;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.todo-content-top {
+	max-height: 90%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	font-weight: 600;
+}
+
+.todo-content-top p {
+	color: #888;
+	font-size: 14px;
+	max-height: 110px;
+	overflow: hidden;
+}
+
+.todo-content-bottom {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+/* Priority Colors */
+.moderate {
+	color: #e65100;
+	font-weight: 600;
+}
+
+.low {
+	color: #2e7d32;
+	font-weight: 600;
+}
+
+.high {
+	color: #c62828;
+	font-weight: 600;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1000px) {
+	.todo-content-top h3 {
+		font-size: 18px;
+	}
+
+	.todo-content-top p {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.todo-content-bottom {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.todo-content-bottom p {
+		font-size: 10px;
+	}
+
+	.todo-content-top h3 {
+		font-size: 18px;
+	}
+}

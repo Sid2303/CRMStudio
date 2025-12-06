@@ -1,0 +1,14 @@
+project Model:
+	title
+	description
+	members count
+	current state
+	created date
+	due date
+	costumer details
+	Priority
+	type
+	actual cost
+	discussed price
+	billing status
+	team roles

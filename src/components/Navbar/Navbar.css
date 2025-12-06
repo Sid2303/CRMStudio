@@ -1,77 +1,76 @@
 header {
-    min-height: 12vh;
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #514ef3;
+	min-height: 12vh;
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #514ef3;
 }
 
-.header-left{
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
+.header-left {
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
 }
 
-.mobile-section{
-    display: none;
-    height: 100%;
+.mobile-section {
+	display: none;
+	height: 100%;
 }
 
-.header-left image{
-    height: 40px;
-    width: 40px;
+.header-left image {
+	height: 40px;
+	width: 40px;
 }
 
-
-
-.mobile-section img{
-    height: 90px;
-    object-fit: contain;
+.mobile-section img {
+	height: 90px;
+	object-fit: contain;
 }
 
-.mobile-section{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.mobile-section {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
 
 @media only screen and (max-width: 1000px) {
-    .header-left image{
-        height: 30px;
-        width: 30px;
-    }
+	.header-left image {
+		height: 30px;
+		width: 30px;
+	}
 
-    .header-left p{
-        display: none;
-    }
+	.header-left p {
+		display: none;
+	}
 
-    .dropdown-trigger img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .header{
-        /* display: none; */
-    }
+	.dropdown-trigger img {
+		width: 40px;
+		height: 40px;
+	}
 }
 
 @media screen and (max-width: 750px) {
-    header{
-        display: flex;
-    }
+	header {
+		display: flex;
+		height: 78px;
+		padding: 0;
+	}
 
-    .mobile-section{
-        display: flex;
-    }
+	.mobile-section {
+		display: flex;
+	}
 
-    .page-name h1{
-        display: none;
-    }
+	.page-name h1 {
+		display: none;
+	}
 }
 
-@media only screen and (max-width: 500px){
-    
+@media only screen and (max-width: 500px) {
+	#menu-button {
+		width: 30px;
+		height: 30px;
+	}
 }

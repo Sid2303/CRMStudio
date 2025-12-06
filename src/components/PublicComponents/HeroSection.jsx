@@ -10,7 +10,6 @@ export default function HeroSection() {
 			initial={{ opacity: 0, y: -50 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.3, ease: 'easeOut' }}
-			viewport={{ margin: '-100px' }}
 		>
 			<h1>
 				The everything app, for <FlipWords words={['work', 'teams', 'sales']} />
