@@ -7,6 +7,7 @@ import SelectedTodo from '../pages/private/ToDo/Components/SelectedTodo.jsx';
 import Notes from '../pages/private/Notes/Notes.jsx';
 import Projects from '../pages/private/Projects/Projects.jsx';
 import Bussiness from '../pages/private/Bussiness/Bussiness.jsx';
+import AddTodo from '../pages/private/ToDo/Components/AddTodo.jsx';
 
 export default function ProtectedRoutes() {
 	return (
@@ -19,7 +20,6 @@ export default function ProtectedRoutes() {
 					</PvtLayout>
 				}
 			/>
-
 			{/* <Route
 				path="/companydashboard"
 				element={
@@ -28,7 +28,6 @@ export default function ProtectedRoutes() {
 					</PvtLayout>
 				}
 			/> */}
-
 			<Route
 				path="/todo"
 				element={
@@ -37,7 +36,14 @@ export default function ProtectedRoutes() {
 					</PvtLayout>
 				}
 			/>
-
+			<Route
+				path="/todo/addTodo"
+				element={
+					<PvtLayout pageTitle="Add New Todo">
+						<AddTodo />
+					</PvtLayout>
+				}
+			/>
 			<Route
 				path="/todo/:id"
 				element={
@@ -45,8 +51,7 @@ export default function ProtectedRoutes() {
 						<SelectedTodo />
 					</PvtLayout>
 				}
-			/>
-
+			/>{' '}
 			<Route
 				path="/notes"
 				element={
@@ -55,7 +60,6 @@ export default function ProtectedRoutes() {
 					</PvtLayout>
 				}
 			/>
-
 			<Route
 				path="/projects"
 				element={
@@ -64,7 +68,6 @@ export default function ProtectedRoutes() {
 					</PvtLayout>
 				}
 			/>
-
 			<Route
 				path="/bussiness"
 				element={
