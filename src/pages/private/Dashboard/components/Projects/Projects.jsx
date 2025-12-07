@@ -6,8 +6,6 @@ import projects from '../../../../../assets/data/project-list.js';
 import Project from './Project.jsx';
 
 function Projects() {
-	// console.log(projects);
-
 	return (
 		<div className="notes-home-page">
 			<CardLayout icon={<FontAwesomeIcon icon={faListCheck} />} title="Projects">

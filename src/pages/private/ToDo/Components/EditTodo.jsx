@@ -7,26 +7,41 @@ import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileLines, faUser, faCalendar, faClock } from '@fortawesome/free-solid-svg-icons';
+import todosList from '../../../../assets/data/todolist.js';
 import './selectedTodo.css';
 
-export default function AddTodo() {
+export default function EditTodo() {
 	const navigate = useNavigate();
+	const { id } = useParams();
+
+	const selectedTodo = todosList.find(todo => todo.id === parseInt(id));
 
 	const [formData, setFormData] = useState({
-		title: '',
-		description: '',
-		priority: 'Medium',
-		status: 'not-started',
-		startDate: '',
-		deadline: '',
-		assignedTo: '',
-		assignedFrom: '',
-		projectId: '',
-		notes: '',
+		title: selectedTodo?.title || '',
+		description: selectedTodo?.description || '',
+		priority: selectedTodo?.priority || 'Medium',
+		status: selectedTodo?.status || 'not-started',
+		startDate: selectedTodo?.startDate || '',
+		deadline: selectedTodo?.deadline || '',
+		assignedTo: selectedTodo?.assignedTo || '',
+		assignedFrom: selectedTodo?.assignedFrom || '',
+		projectId: selectedTodo?.projectId || '',
+		notes: selectedTodo?.notes || '',
 	});
+
+	if (!selectedTodo) {
+		return (
+			<Box sx={{ padding: 4 }}>
+				<Typography variant="h5">Todo not found</Typography>
+				<Button onClick={() => navigate('/todo')} sx={{ marginTop: 2 }}>
+					Back to Todo List
+				</Button>
+			</Box>
+		);
+	}
 
 	const handleChange = e => {
 		const { name, value } = e.target;
@@ -37,12 +52,12 @@ export default function AddTodo() {
 	};
 
 	const handleSubmit = () => {
-		console.log('Creating todo:', formData);
-		navigate('/todo');
+		console.log('Updating todo:', formData);
+		navigate(`/todo/${id}`);
 	};
 
 	const handleCancel = () => {
-		navigate('/todo');
+		navigate(`/todo/${id}`);
 	};
 
 	return (
@@ -54,9 +69,9 @@ export default function AddTodo() {
 					</Box>
 					<Box className="todo-heading">
 						<Typography variant="h5" component="h2">
-							Create New Todo
+							Edit Todo
 						</Typography>
-						<Typography variant="body2">Add a new task to your list</Typography>
+						<Typography variant="body2">Update your task details</Typography>
 					</Box>
 				</Box>
 				<Box className="todo-header-options">
@@ -85,7 +100,7 @@ export default function AddTodo() {
 							},
 						}}
 					>
-						Create Todo
+						Update Todo
 					</Button>
 				</Box>
 			</Box>
@@ -216,7 +231,6 @@ export default function AddTodo() {
 						</Box>
 					</Box>
 				</Box>
-
 				<Box className="notes">
 					<Typography variant="h6" component="h3">
 						Notes

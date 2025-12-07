@@ -34,12 +34,10 @@ export default function SelectedTodo() {
 		);
 	}
 
-	// Mock data for assignedTo and assignedFrom users (you can replace with actual data)
 	const assignedToUser = { name: 'User ' + selectedTodo.assignedTo };
 	const assignedFromUser = { name: 'User ' + selectedTodo.assignedFrom };
 	const project = { title: selectedTodo.projectId ? 'Project ' + selectedTodo.projectId : null };
 
-	// Calculate due status
 	const deadline = new Date(selectedTodo.deadline);
 	const now = new Date();
 	const duesStatus = deadline < now ? 'Overdue' : 'On Time';
@@ -52,24 +50,19 @@ export default function SelectedTodo() {
 	};
 
 	const handleDelete = () => {
-		// Add your delete logic here
 		const confirmDelete = window.confirm('Are you sure you want to delete this todo?');
 		if (confirmDelete) {
-			// Delete logic would go here
 			console.log('Deleting todo:', selectedTodo.id);
 			navigate('/todo');
 		}
 	};
 
 	const handleEdit = () => {
-		// Add your edit logic here
-		console.log('Editing todo:', selectedTodo.id);
-		// Navigate to edit page or open edit modal
+		navigate(`/todo/edit/${selectedTodo.id}`);
 	};
 
 	return (
 		<Box>
-			{/* Todo Header */}
 			<Box className="todo-header">
 				<Box className="todo-header-title">
 					<Box className="todo-icon">
@@ -88,7 +81,6 @@ export default function SelectedTodo() {
 				</Box>
 			</Box>
 
-			{/* Todo Body */}
 			<Box className="todo-body">
 				<Box className="todo-body-header">
 					<Typography variant="h6" component="h3">

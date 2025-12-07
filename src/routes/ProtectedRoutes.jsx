@@ -4,10 +4,11 @@ import Dashboard from '../pages/private/Dashboard/Dashboard.jsx';
 import PvtLayout from '../layouts/PvtLayout.jsx';
 import ToDo from '../pages/private/ToDo/ToDo.jsx';
 import SelectedTodo from '../pages/private/ToDo/Components/SelectedTodo.jsx';
+import AddTodo from '../pages/private/ToDo/Components/AddTodo.jsx';
+import EditTodo from '../pages/private/ToDo/Components/EditTodo.jsx';
 import Notes from '../pages/private/Notes/Notes.jsx';
 import Projects from '../pages/private/Projects/Projects.jsx';
 import Bussiness from '../pages/private/Bussiness/Bussiness.jsx';
-import AddTodo from '../pages/private/ToDo/Components/AddTodo.jsx';
 
 export default function ProtectedRoutes() {
 	return (
@@ -45,13 +46,21 @@ export default function ProtectedRoutes() {
 				}
 			/>
 			<Route
+				path="/todo/edit/:id"
+				element={
+					<PvtLayout pageTitle="Edit Todo">
+						<EditTodo />
+					</PvtLayout>
+				}
+			/>
+			<Route
 				path="/todo/:id"
 				element={
 					<PvtLayout pageTitle="Todo Details">
 						<SelectedTodo />
 					</PvtLayout>
 				}
-			/>{' '}
+			/>
 			<Route
 				path="/notes"
 				element={

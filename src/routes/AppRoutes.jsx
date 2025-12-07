@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/public/Home.jsx';
-// Auth pages
 import Login from '../pages/public/auth/Login.jsx';
 import SignUp from '../pages/public/auth/SignUp.jsx';
 import ForgotPassword from '../pages/public/auth/ForgotPassword.jsx';
@@ -12,7 +11,6 @@ import ProtectedRoutes from './ProtectedRoutes.jsx';
 export default function AppRoutes() {
 	return (
 		<Routes>
-			{/* Public routes */}
 			<Route path="/" element={<Home />} />
 			<Route path="/login" element={<Login />} />
 			<Route path="/signup" element={<SignUp />} />
@@ -20,7 +18,6 @@ export default function AppRoutes() {
 			<Route path="/verifyotp" element={<VerifyOtp />} />
 			<Route path="/setnewpassword" element={<SetNewPassword />} />
 
-			{/* Protected routes */}
 			<Route path="/*" element={<ProtectedRoutes />} />
 		</Routes>
 	);

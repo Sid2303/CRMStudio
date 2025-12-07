@@ -11,7 +11,7 @@ export default function Dashboard() {
 	const date = new Date();
 	const today = date.getDate();
 	const [selectedDate, setSelectedDate] = useState(today);
-	const [month, setMonth] = useState(date.getMonth()); // 0-based
+	const [month, setMonth] = useState(date.getMonth());
 	const [year, setYear] = useState(date.getFullYear());
 
 	const handleDateChange = newDate => {

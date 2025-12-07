@@ -49,16 +49,10 @@ export default function Sidebar(props) {
 						<NavLink to="/projects" className={({ isActive }) => (isActive ? 'selected-page' : '')}>
 							<FontAwesomeIcon icon={faFolder} />
 							<p>Projects</p>
-						</NavLink>
-					</li>
-					{/* <li>
-                        <NavLink to="/chats" className={({ isActive }) => isActive ? 'selected-page' : ''}>
-                            <FontAwesomeIcon icon={faComment} />
-                            <p>Chats</p>
-                        </NavLink>
-                    </li> */}
-				</ul>
-			</nav>
+					</NavLink>
+				</li>
+			</ul>
+		</nav>
 			<div className="sidebar-footer">
 				<div className="sidebar-dropdown-trigger">
 					<div className="profile-img">

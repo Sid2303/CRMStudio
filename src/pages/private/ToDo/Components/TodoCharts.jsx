@@ -6,7 +6,6 @@ import { PieChart } from '@mui/x-charts/PieChart';
 import todosList from '../../../../assets/data/todolist.js';
 
 export default function TodoCharts() {
-	// Calculate status counts
 	const statusCounts = todosList.reduce(
 		(acc, todo) => {
 			if (todo.status === 'completed') acc.completed++;
