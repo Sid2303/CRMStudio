@@ -5,10 +5,10 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 export default function Profile() {
-		return (
-			<div className="profile-card">
-				<div className="profile-card-pic"></div>
-				<div className="profile-card-info">
+	return (
+		<div className="profile-card">
+			<div className="profile-card-pic"></div>
+			<div className="profile-card-info">
 				<h2 className="profile-card-info-username">Bruce Wayne</h2>
 				<p className="profile-card-info-role">Bussiness Man</p>
 				<p className="profile-card-info-employment-type">Full Time</p>
