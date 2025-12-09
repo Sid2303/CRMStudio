@@ -19,7 +19,7 @@ export default function Projects() {
 			field: 'memberCount',
 			headerName: 'Member Count',
 			width: 150,
-			valueGetter: params => params.row.members?.length || 0,
+			valueGetter: (value, row) => row.members?.length || 0,
 		},
 	];
 
@@ -69,13 +69,7 @@ export default function Projects() {
 				<DataGrid
 					rows={filteredProjects}
 					columns={columns}
-					initialState={{
-						pagination: {
-							paginationModel: { pageSize: 10 },
-						},
-					}}
-					pageSizeOptions={[5, 10, 25]}
-					checkboxSelection
+					// checkboxSelection
 					disableRowSelectionOnClick
 				/>
 			</Box>
