@@ -121,7 +121,9 @@
 
 .note-display {
 	border-left: 2px solid #e5e7eb;
-	width: calc(100vw - 500px);
+	width: calc(100vw - 550px);
+	max-width: 1200px;
+	/* min-width: 100%; */
 }
 
 .note-display-header {
@@ -130,25 +132,25 @@
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 2px solid #e5e7eb;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 20px 20px;
 }
 
 .note-display-header-info {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	/* gap: 10px; */
+	padding: 5px 0px;
 }
 
 .note-display-header-minor-info {
 	display: flex;
-	gap: 40px;
+	gap: 20px;
 	color: #6a7282;
 	font-size: 14px;
 }
 
 .note-display-header-info h1 {
-	font-size: 26px;
+	font-size: 22px;
 }
 
 .note-display-header-edit {
@@ -521,11 +523,19 @@
 	}
 
 	.note-display-content-div {
-		padding: 0 20px;
+		padding: 0px 20px;
 	}
 
 	.note-display-header {
-		padding: 0 20px;
+		padding: 15px 20px;
+		flex-direction: column;
+		height: auto;
+		justify-content: start;
+		align-items: start;
+	}
+
+	.note-display-header-info h1 {
+		margin: 0;
 	}
 }
 

@@ -22,7 +22,7 @@ export default function SelectedNote({ selectedNote, onEdit, onDelete }) {
 	};
 
 	return (
-		<Box>
+		<Box className="note-display">
 			<div className="note-display-header">
 				<div className="note-display-header-info">
 					<h1>{selectedNote.title}</h1>

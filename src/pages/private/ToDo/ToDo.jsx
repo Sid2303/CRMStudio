@@ -113,7 +113,7 @@ export default function ToDo() {
 					spacing={2}
 					sx={{
 						width: { xs: '100%', md: '50%' },
-						maxHeight: '600px',
+						// maxHeight: '600px',
 						overflowY: 'auto',
 						paddingRight: { xs: '0', md: '10px' },
 						'@media (max-width: 900px)': {
